@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chatty</title>
+</head>
+
+<body>
+
+    <div class="backdrop">
+
+    </div>
+    <form class="modal">
+
+        <h1 id="title">Welcome</h1>
+        <br>
+        <p id="content">Enter Your User Name</p>
+        <br>
+
+        <input placeholder="Enter User Name" type="text">
+        <br>
+        <button>Submit</button>
+    </form>
+    <div class="container">
+        <div class="chatbox">
+            <ul id="messagelist"></ul>
+            <form class="Input">
+                <input type="text" placeholder="Type your message ...">
+                <button>Send</button>
+            </form>
+        </div>
+        <br>
+        <div class="activeusers">
+            <h2>Active Users</h2>
+            <ul id="users">
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
